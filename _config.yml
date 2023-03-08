@@ -48,11 +48,16 @@ defaults:
       title: "joseryzmal.dev"
 
 exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
   - package.json
   - tailwind.config.js
   - yarn.lock
   - assets/css/tailwind.css
-  - node_modules
 
 collections:
   work_experiences:
