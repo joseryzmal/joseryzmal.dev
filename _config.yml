@@ -3,6 +3,43 @@ url: 'https://joseryzmal.dev'
 baseurl: ''
 title: 'joseryzmal.dev'
 
+profile_name: Joseph Malabuyoc
+profile_title: Software Developer
+linkedin_url: https://www.linkedin.com/in/joseph-ryzan-malabuyoc-93825a108/
+about: >-
+  A pragmatic, results-oriented software developer with over ten years of experience. Key strengths include critical thinking, problem-solving, and adaptability.
+
+
+  Committed to creating well-designed, efficient applications through collaboration and understanding customers' needs.
+skills:
+  - title: Ruby on Rails
+    rating: 5/5
+  - title: Javascript / React / Stimulus
+    rating: 5/5
+  - title: CSS / Tailwind
+    rating: 5/5
+  - title: Test Driven Development
+    rating: 5/5
+  - title: Analysis & Design
+    rating: 5/5
+  - title: Agile Practices
+    rating: 5/5
+  - title: ReduxJS
+    rating: 5/5
+  - title: React Native
+    rating: 4/5
+  - title: PHP / WordPress
+    rating: 4/5
+education:
+  - title: Refactoring Rails
+    details: Ben Orenstein (refactoringrails.io), 2022
+  - title: Hotwire for Rails Developers
+    details: The Pragmatic Studio (pragmaticstudio.com), 2021
+  - title: Ruby on Rails
+    details: The Pragmatic Studio (pragmaticstudio.com), 2021
+  - title: Don Bosco Technical College, Manila
+    details: B.Sc IT, 2006
+
 defaults:
   - scope:
       path: ""
