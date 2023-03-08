@@ -8,6 +8,7 @@ module.exports = {
     './_layouts/**/*.html',
     './_posts/*.md',
     './*.md',
+    './**/*.md',
     './*.html',
   ],
   theme: {

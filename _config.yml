@@ -15,12 +15,8 @@ exclude:
   - tailwind.config.js
   - yarn.lock
   - assets/css/tailwind.css
+  - node_modules
 
 collections:
   work_experiences:
-    output: false
-    order:
-      - kickbooster.md
-      - tactica.md
-      - victoire_multimedia.md
-      - freelance.md
+    sort_by: index

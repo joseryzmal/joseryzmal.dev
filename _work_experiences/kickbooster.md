@@ -1,11 +1,12 @@
 ---
+index: 0
 position: Senior Software Developer
 company: Kickbooster, Inc / Bold Commerce
 location: Winnipeg, MB
 duration: 2020 - 2022
 url: https://boldcommerce.com/
 ---
-{: .list-disc .pl-8 .leading-loose}
+{: .list-disc .pl-4 .leading-loose}
 - Developed and maintained features for a mature Ruby on Rails app
 - Collaborated with project managers and designers regarding
 - Produced quality code by writing tests and regular code
