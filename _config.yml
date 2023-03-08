@@ -7,9 +7,19 @@ defaults:
       path: ""
     values:
       layout: "default"
+      title: "joseryzmal.dev"
 
 exclude:
   - package.json
   - tailwind.config.js
   - yarn.lock
   - assets/css/tailwind.css
+
+collections:
+  work_experiences:
+    output: false
+    order:
+      - kickbooster.md
+      - tactica.md
+      - victoire_multimedia.md
+      - freelance.md
