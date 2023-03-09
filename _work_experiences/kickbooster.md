@@ -1,7 +1,7 @@
 ---
 index: 0
 position: Senior Software Developer
-company: Kickbooster, Inc / Bold Commerce
+company: Kickbooster Inc.
 location: Winnipeg, MB
 duration: 2020 - 2022
 url: https://boldcommerce.com/
