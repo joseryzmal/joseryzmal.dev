@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/styles.css --minify",
-    "watch": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/styles.css --watch",
+    "build": "yarn run clean && npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/styles.css --minify",
+    "watch": "yarn run clean && npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/styles.css --watch",
     "clean": "rm -rf _site/*"
   },
   "devDependencies": {
