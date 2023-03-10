@@ -1,8 +1,10 @@
-<dl class="mb-6">
+{% assign css = 'translate-x-' | append: include.rating | replace: '5/5', 'full' %}
+<dl class="mb-6 print:flex print:justify-between">
   <dt>{{ include.title }}</dt>
   <dd>
-    <div class="relative overflow-hidden h-3 rounded-full bg-gray-500 border border-gray-600">
-      <div class="absolute inset-y-0 left-auto right-full rounded-full bg-neutral-50 border border-neutral-100 w-full {{ include.css }}"></div>
+    <div class="relative overflow-hidden h-3 rounded-full bg-gray-500 border border-gray-600 print:hidden">
+      <div class="absolute inset-y-0 left-auto right-full rounded-full bg-neutral-50 border border-neutral-100 w-full {{ css }}"></div>
     </div>
+    <span class="hidden print:inline">{{ include.rating }}</span>
   </dd>
 </dl>

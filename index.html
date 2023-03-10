@@ -5,9 +5,15 @@ skill_rating_css:
   - translate-x-3/5
   - translate-x-4/5
   - translate-x-full
+left:
+  bg: bg-blue-800
+  text: text-neutral-50
+right:
+  bg: bg-white
+  text: text-blue-900
 ---
 <div class="grid grid-cols-1 md:grid-cols-11 md:min-h-screen print:grid-cols-11">
-  <div class="bg-blue-800 text-neutral-50 print:text-black md:col-span-5 print:col-span-5 flex justify-center md:justify-end px-8 py-8 lg:py-16">
+  <div class="{{page.left.bg}} {{page.left.text}} print:bg-white print:text-black md:col-span-5 print:col-span-5 flex justify-center md:justify-end px-8 py-8 lg:py-16 print:p-4">
     <div class="flex flex-col gap-y-6 lg:gap-y-10 max-w-sm">
       <figure class="mx-8 lg:mx-20 print:hidden">
         <img src="/assets/images/photo.jpg" alt="{{ site.profile_name }}" class="block mx-auto rounded-full">
@@ -15,16 +21,16 @@ skill_rating_css:
       <section class="text-center print:text-left">
         <h1 class="text-3xl font-bold tracking-wide">{{ site.profile_name }}</h1>
         <h2 class="text-2xl font-medium tracking-wide">{{ site.profile_title }}</h2>
-        <div class="flex justify-center print:flex-col print:justify-start mt-4 mb-6">
+        <div class="flex justify-center print:flex-col print:justify-start mt-4 mb-6 print:mb-18">
           <a href="{{ site.linkedin_url }}" target="_blank" class="print:hidden">
             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
             </svg>
           </a>
-          <div class="grid gap-y-4 hidden print:block text-sm">
-            <span>{{ site.linkedin_url }}</span>
-            <span>{{ site.url }}</span>
-          </div>
+          <ul class="grid gap-y-4 text-sm list-disc hidden print:block">
+            <li>{{ site.linkedin_url }}</li>
+            <li>{{ site.url }}</li>
+          </ul>
         </div>
 
         <div class="grid gap-y-4">
@@ -35,13 +41,14 @@ skill_rating_css:
       <section class="mx-auto max-w-xs w-full">
         <h1 class="text-center mb-6 text-2xl font-bold tracking-wide">Skills</h1>
         {% for skill in site.skills %}
-          {% assign css = 'translate-x-' | append: skill.rating | replace: '5/5', 'full' %}
-          {% include skill.html title=skill.title css=css %}
+          {% include skill.html title=skill.title rating=skill.rating %}
         {% endfor %}
       </section>
     </div>
   </div>
-  <div class="text-blue-900 md:col-span-6 print:col-span-6 px-8 py-8 lg:py-16">
+  <div class="{{page.right.bg}} {{page.right.text}} print:bg-white print:text-black md:col-span-6 print:col-span-6 px-8 py-8 lg:py-16 print:p-4">
+    {% include print.html %}
+
     <div class="grid gap-y-6 lg:gap-y-10 max-w-lg">
       <h2 class="lg:text-center text-2xl font-bold tracking-wide">Work Experience</h2>
       <div>
@@ -49,7 +56,7 @@ skill_rating_css:
         {% for work in work_experiences %}
           <section class="relative{% unless forloop.last %} pb-6 lg:pb-8{% endunless %}">
             {% unless forloop.last %}
-              <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
+              <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200 print:hidden" aria-hidden="true"></span>
             {% endunless %}
             <div class="relative flex">
               <div class="flex-none w-8 h-8 bg-white flex justify-center items-center print:hidden">
@@ -83,7 +90,7 @@ skill_rating_css:
         {% for edu_item in site.education %}
           <section class="relative">
             {% unless forloop.last %}
-              <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
+              <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200 print:hidden" aria-hidden="true"></span>
             {% endunless %}
             <div class="relative flex">
               <div class="flex-none w-8 h-8 bg-white flex justify-center items-center print:hidden">
