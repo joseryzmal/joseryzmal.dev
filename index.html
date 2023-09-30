@@ -53,7 +53,7 @@ right:
       <h2 class="lg:text-center text-2xl font-bold tracking-wide">Work Experience</h2>
       <div>
         {% assign work_experiences = site.work_experiences | sort: 'index' %}
-        {% for work in work_experiences %}
+        {% for work in work_experiences reversed %}
           <section class="relative{% unless forloop.last %} pb-6 lg:pb-8{% endunless %}">
             {% unless forloop.last %}
               <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200 print:hidden" aria-hidden="true"></span>

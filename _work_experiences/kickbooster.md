@@ -1,5 +1,5 @@
 ---
-index: 0
+index: 3
 position: Senior Software Developer
 company: Kickbooster Inc.
 location: Winnipeg, MB
@@ -14,3 +14,4 @@ url: https://boldcommerce.com/
 - Participated and assisted with website monitoring and on-call duty
 - Improved customer and developer experience by introducing new tools and learnings to the team
 - Delivered improved features that have exceeded sales targets
+- Stack: Rails, React, TailwindCSS, Stimulus, StimulusReflex, RSpec

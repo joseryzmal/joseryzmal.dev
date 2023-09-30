@@ -1,5 +1,5 @@
 ---
-index: 3
+index: 0
 position: Software Developer
 company: Freelance
 duration: 2006 - 2008

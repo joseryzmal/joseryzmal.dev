@@ -1,5 +1,5 @@
 ---
-index: 1
+index: 2
 position: Software Developer
 company: Tactica Interactive
 location: Winnipeg, MB

@@ -1,5 +1,5 @@
 ---
-index: 2
+index: 1
 position: Software Developer
 company: Victoire Multimedia
 location: Redwood City, CA
