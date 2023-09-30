@@ -19,7 +19,8 @@ right:
         <img src="/assets/images/photo.jpg" alt="{{ site.profile_name }}" class="block mx-auto rounded-full">
       </figure>
       <section class="text-center print:text-left">
-        <h1 class="text-3xl font-bold tracking-wide">{{ site.profile_name }}</h1>
+        <h1 class="text-3xl font-bold tracking-wide print:hidden">{{ site.profile_name }}</h1>
+        <h1 class="text-3xl font-bold tracking-wide hidden print:block">{{ site.full_name }}</h1>
         <h2 class="text-2xl font-medium tracking-wide">{{ site.profile_title }}</h2>
         <div class="flex justify-center print:flex-col print:justify-start mt-4 mb-6 print:mb-18">
           <a id="linkedin" href="{{ site.linkedin_url }}" target="_blank" class="print:hidden">
