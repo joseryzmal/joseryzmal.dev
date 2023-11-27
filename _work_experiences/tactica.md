@@ -7,6 +7,6 @@ duration: 2012 - 2020
 url: https://tactica.ca/
 ---
 {: .list-disc .pl-4 .leading-loose}
-- Delivered and published mobile applications ranging from health apps to educational apps using React Native and ReduxJS, and using Ruby on Rails as an API server
-- Created and deployed a variety of web applications using different technologies such as ReactJS (SPA), Ruby on Rails, WordPress, PHP, and MeteorJS
-- Involved in two cross-platform games made with Unity3d and C#
+- Successfully developed and launched a diverse array of mobile applications, spanning health and educational sectors, utilizing React Native and ReduxJS. Employed Ruby on Rails as the API server, ensuring seamless integration and robust functionality.
+- Demonstrated versatility by creating and deploying a multitude of web applications employing various technologies, including ReactJS for single-page applications (SPA), Ruby on Rails, WordPress, PHP, and MeteorJS. This diverse skill set facilitated the delivery of tailored solutions across different platforms.
+- Contributed to the gaming industry by participating in the development of two cross-platform games using Unity3d and C#, showcasing adaptability and proficiency in game development technologies.

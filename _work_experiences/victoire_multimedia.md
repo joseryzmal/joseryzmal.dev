@@ -6,4 +6,4 @@ location: Redwood City, CA
 duration: 2008 - 2012
 ---
 {: .list-disc .pl-4 .leading-loose}
-- Collaborated with a team working on ecommerce websites using Magento
+- Participated in collaborative efforts within a team dedicated to the development of ecommerce websites using Magento, contributing to the successful creation and enhancement of online retail platforms
